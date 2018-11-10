@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+ int main(){
+     char txt[100],pattern[100];
+     int length1,length2,i,j,m,n;
+
+     cin >>txt;
+     cin >>pattern;
+
+     length1 = strlen(txt);
+     length2 = strlen(pattern);
+
+     for(i =0;i <n-m;i++){
+            for(j =0;j <m;j++){
+                    if(txt[i+j] !=pattern[j])
+                    break;
+            }
+            if(j ==m)
+                printf("Pattern matched at position at index:%d\n",i);
+     }
+     return 0;
+ }
